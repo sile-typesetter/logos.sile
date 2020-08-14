@@ -1,0 +1,44 @@
+\begin{document}
+% From metalogo.dtx, CTAN metalogo
+\define[command=kernTe]{\kern[width=-0.08400em]}
+\define[command=kerneX]{\kern[width=-0.06300em]}
+\define[command=kerneT]{\kern[width=-0.07400em]}
+\define[command=kernXe]{\kern[width=-0.06300em]}
+\define[command=kerneL]{\kern[width=-0.06800em]}
+\define[command=kernLa]{\kern[width=-0.30500em]}
+\define[command=kernaT]{\kern[width=-0.07313em]}
+\define[command=kernX2]{\kern[width= 0.10100em]}
+
+% New ones based on above for SILE logo
+\define[command=kernSI]{\kern[width=-0.000em]}
+\define[command=kernIL]{\kern[width=-0.000em]}
+\define[command=kernLE]{\kern[width=-0.200em]}
+
+\define[command=CM]{\font[family=Latin Modern Roman]{\process}}
+
+\define[command=SILE]{S\kernSI\lower[height=0.5ex]{I}\kernIL{}L\kernLE\raise[height=0.6ex]{\font[features=+c2sc]{E}}}
+\define[command=SILE-CM]{\CM{S\kernSI\lower[height=0.5ex]{I}\kernIL{}L\kernLE\raise[height=0.6ex]{\font[family=Latin Modern Roman Caps]{e}}}}
+\define[command=TeX]{T\kernTe\lower[height=0.5ex]{E}\kerneX{}X}
+\define[command=TeX-CM]{\CM{\TeX}}
+\define[command=LaTeX]{L\kernLa\raise[height=0.4ex]{\font[features=+c2sc]{A}}\kernaT\TeX}
+\define[command=LaTeX-CM]{\CM{L\kernLa\raise[height=0.4ex]{\font[family=Latin Modern Roman Caps]{a}}\kernaT\TeX}}
+\define[command=_2]{\kernX2{}2\lower[height=0.131em]{\process}}
+\define[command=LaTeX2e]{\LaTeX\_2{\em{ε}}}
+\define[command=epsilon-CM]{\font[family=Latin Modern Math]{𝜺}}
+\define[command=LaTeX2e-CM]{\CM{\LaTeX-CM\_2{\epsilon-CM}}}
+\define[command=XE]{X\kernXe\lower[height=0.131em]{Ǝ}\kerneT}
+\define[command=XE-rot]{X\kernXe\lower[height=0.131em]{\rotate[angle=180]{\lower[height=3ex]{E}}}\kerneT}
+\define[command=TEX]{T\lower[height=0.131em]{\kernTe{}E}\kerneX{}X}
+\define[command=XeTeX]{\XE\TEX}
+\define[command=XeTeX-rot]{\XE-rot\TEX}
+\define[command=XeTeX-CM]{\CM{\XE\TEX}}
+\define[command=XeLaTeX]{\XE\kern[width=0.006]\LaTeX}
+\define[command=XeLaTeX-rot]{\XE-rot\kern[width=0.006]\LaTeX}
+\define[command=XeLaTeX-CM]{\CM{\XE\kern[width=0.006]\LaTeX-CM}}
+\define[command=Lua]{Lua\kernaT}
+\define[command=Lua-CM]{\CM{\Lua}}
+\define[command=LuaTeX]{\Lua\TeX}
+\define[command=LuaLaTeX]{Lua\LaTeX}
+\define[command=LuaTeX-CM]{\Lua-CM\TeX-CM}
+\define[command=LuaLaTeX-CM]{\CM{Lua}\LaTeX-CM}
+\end{document}

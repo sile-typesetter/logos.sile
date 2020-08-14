@@ -1,0 +1,104 @@
+\begin[papersize=210mm x 100mm]{document}
+\set[parameter=font.family,value=EB Garamond,makedefault=true]
+\set[parameter=font.size,value=12,makedefault=true]
+\script[src=packages/raiselower]
+\script[src=packages/rotate]
+\script[src=packages/frametricks]
+
+\include[src=sile-logos.sil]
+
+\neverindent\nofolios
+\define[command=line]{\novbreak\noindent\hrule[width=4em,height=0.3pt]\par\novbreak\skip[height=5pt]}
+
+\script[src=packages/rules]
+\script[src=packages/rebox]
+
+\rebox[phantom=y]{A}
+
+\par\center{\font[size=24pt,weight=1000]{\LaTeX logos—in \SILE!}}
+\skip[height=1em]
+
+\breakframevertical
+\makecolumns[columns=4]
+
+\center{
+\line
+\LaTeX < \SILE
+
+\font[family=Libertinus Serif]{\LaTeX < \SILE}
+
+\define[command=kernSI]{\kern[width=-0.18em]}
+\define[command=kernIL]{\kern[width=-0.18em]}
+\font[family=FreeMono]{\LaTeX < \SILE}
+\define[command=kernSI]{\kern[width=-0.0em]}
+\define[command=kernIL]{\kern[width=-0.0em]}
+
+\font[family=Libertinus Sans]{\strong{\LaTeX < \SILE}}
+
+\LaTeX-CM < \SILE-CM
+\line
+}
+
+\eject
+\center{
+\line
+\LaTeX2e
+
+\font[family=Libertinus Serif]{\LaTeX2e}
+
+\font[family=FreeMono]{\LaTeX2e}
+
+\font[family=Libertinus Sans]{\strong{\LaTeX2e}}
+
+\LaTeX2e-CM
+\line
+}
+
+\eject
+\center{
+\line
+\XeTeX
+
+\font[family=Libertinus Serif]{\XeTeX}
+
+\font[family=FreeMono]{\XeTeX}
+
+\font[family=Libertinus Sans]{\strong{\XeTeX-rot}}
+
+\XeTeX-CM
+\line
+}
+
+\eject
+\center{
+\line
+\XeLaTeX
+
+\font[family=Libertinus Serif]{\XeLaTeX}
+
+\font[family=FreeMono]{\XeLaTeX}
+
+\font[family=Libertinus Sans]{\strong{\XeLaTeX-rot}}
+
+\XeLaTeX-CM
+\line
+}
+\frame[left=left(content), right=right(content), top=60%ph, bottom=100%ph, id=center]
+\typeset-into[frame=center]{
+\center{
+\define[command=line]{\novbreak\noindent\hrule[width=14em,height=0.3pt]\par\novbreak\skip[height=5pt]}
+\line
+\TeX \LuaTeX \LuaLaTeX
+
+\font[family=Libertinus Serif]{\TeX \LuaTeX \LuaLaTeX}
+
+\font[family=FreeMono]{\TeX \LuaTeX \LuaLaTeX}
+
+\font[family=Libertinus Sans]{\strong{\TeX \LuaTeX \LuaLaTeX}}
+
+\TeX-CM \LuaTeX-CM \LuaLaTeX-CM
+\line
+}
+}
+
+\end{document}
