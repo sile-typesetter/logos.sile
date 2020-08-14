@@ -1,5 +1,11 @@
 # LaTeX logos&mdash;in SILE!
 
+![](https://raw.githubusercontent.com/ctrlcctrlv/sile-logos/master/examples.png)
+
+* [`examples.sil`](https://github.com/ctrlcctrlv/sile-logos/blob/master/examples.sil) ([PDF](https://github.com/ctrlcctrlv/sile-logos/blob/master/examples.pdf))
+
+## About
+
 This package adds the "bumpy road" logos from the [LaTeX `metalogo` package](https://ctan.math.illinois.edu/macros/latex/contrib/metalogo/metalogo.pdf) to SILE.
 
 These logos are implemented:
