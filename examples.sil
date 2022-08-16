@@ -1,17 +1,18 @@
 \begin[papersize=210mm x 100mm]{document}
+\nofolios
+\neverindent
+
+\use[module=packages.raiselower]
+\use[module=packages.rotate]
+\use[module=packages.frametricks]
+\use[module=packages.rules]
+\use[module=packages.rebox]
+\use[module=packages.sile-logos]
+
 \set[parameter=font.family,value=EB Garamond,makedefault=true]
 \set[parameter=font.size,value=12,makedefault=true]
-\script[src=packages/raiselower]
-\script[src=packages/rotate]
-\script[src=packages/frametricks]
 
-\include[src=sile-logos.sil]
-
-\neverindent\nofolios
 \define[command=line]{\novbreak\noindent\hrule[width=4em,height=0.3pt]\par\novbreak\skip[height=5pt]}
-
-\script[src=packages/rules]
-\script[src=packages/rebox]
 
 \rebox[phantom=y]{A}
 
@@ -100,5 +101,4 @@
 \line
 }
 }
-
 \end{document}
