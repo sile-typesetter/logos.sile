@@ -1,104 +1,81 @@
 \begin[papersize=210mm x 100mm]{document}
 \nofolios
 \neverindent
-
 \use[module=packages.raiselower]
 \use[module=packages.rotate]
 \use[module=packages.frametricks]
 \use[module=packages.rules]
 \use[module=packages.rebox]
 \use[module=packages.sile-logos]
-
 \set[parameter=font.family,value=EB Garamond,makedefault=true]
 \set[parameter=font.size,value=12,makedefault=true]
-
-\define[command=line]{\novbreak\noindent\hrule[width=4em,height=0.3pt]\par\novbreak\skip[height=5pt]}
-
-\rebox[phantom=y]{A}
-
-\par\center{\font[size=24pt,weight=1000]{\LaTeX logos—in \SILE!}}
-\skip[height=1em]
-
+\define[command=line]{\hrule[width=4em,height=0.3pt]\skip[height=1ex]}
+\hbox{}
+\skip[height=1ex]
+\center{\font[size=24pt,weight=1000]{\LaTeX logos—in \SILE!}}
+\skip[height=3ex]
 \breakframevertical
 \makecolumns[columns=4]
 
-\center{
+\begin{center}
 \line
-\LaTeX < \SILE
-
-\font[family=Libertinus Serif]{\LaTeX < \SILE}
-
+\LaTeX < \SILE\par
+\font[family=Libertinus Serif]{\LaTeX < \SILE}\par
 \define[command=kernSI]{\kern[width=-0.18em]}
 \define[command=kernIL]{\kern[width=-0.18em]}
-\font[family=FreeMono]{\LaTeX < \SILE}
+\font[family=FreeMono]{\LaTeX < \SILE}\par
 \define[command=kernSI]{\kern[width=-0.0em]}
 \define[command=kernIL]{\kern[width=-0.0em]}
-
-\font[family=Libertinus Sans]{\strong{\LaTeX < \SILE}}
-
-\LaTeX-CM < \SILE-CM
+\font[family=Libertinus Sans]{\strong{\LaTeX < \SILE}}\par
+\LaTeX-CM < \SILE-CM\par
 \line
-}
+\end{center}
 
-\eject
-\center{
+\framebreak
+
+\begin{center}
 \line
-\LaTeX2e
-
-\font[family=Libertinus Serif]{\LaTeX2e}
-
-\font[family=FreeMono]{\LaTeX2e}
-
-\font[family=Libertinus Sans]{\strong{\LaTeX2e}}
-
-\LaTeX2e-CM
+\LaTeX2e\par
+\font[family=Libertinus Serif]{\LaTeX2e}\par
+\font[family=FreeMono]{\LaTeX2e}\par
+\font[family=Libertinus Sans]{\strong{\LaTeX2e}}\par
+\LaTeX2e-CM\par
 \line
-}
+\end{center}
 
-\eject
-\center{
+\framebreak
+
+\begin{center}
 \line
-\XeTeX
-
-\font[family=Libertinus Serif]{\XeTeX}
-
-\font[family=FreeMono]{\XeTeX}
-
-\font[family=Libertinus Sans]{\strong{\XeTeX-rot}}
-
-\XeTeX-CM
+\XeTeX\par
+\font[family=Libertinus Serif]{\XeTeX}\par
+\font[family=FreeMono]{\XeTeX}\par
+\font[family=Libertinus Sans]{\strong{\XeTeX-rot}}\par
+\XeTeX-CM\par
 \line
-}
+\end{center}
 
-\eject
-\center{
+\begin{center}
 \line
-\XeLaTeX
-
-\font[family=Libertinus Serif]{\XeLaTeX}
-
-\font[family=FreeMono]{\XeLaTeX}
-
-\font[family=Libertinus Sans]{\strong{\XeLaTeX-rot}}
-
-\XeLaTeX-CM
+\XeLaTeX\par
+\font[family=Libertinus Serif]{\XeLaTeX}\par
+\font[family=FreeMono]{\XeLaTeX}\par
+\font[family=Libertinus Sans]{\strong{\XeLaTeX-rot}}\par
+\XeLaTeX-CM\par
 \line
-}
+\end{center}
+
 \frame[left=left(content), right=right(content), top=60%ph, bottom=100%ph, id=center]
-\typeset-into[frame=center]{
-\center{
-\define[command=line]{\novbreak\noindent\hrule[width=14em,height=0.3pt]\par\novbreak\skip[height=5pt]}
+\begin[frame=center]{typeset-into}
+\begin{center}
+\define[command=line]{\hrule[width=14em,height=0.3pt]\skip[height=5pt]}
 \line
-\TeX \LuaTeX \LuaLaTeX
-
-\font[family=Libertinus Serif]{\TeX \LuaTeX \LuaLaTeX}
-
-\font[family=FreeMono]{\TeX \LuaTeX \LuaLaTeX}
-
-\font[family=Libertinus Sans]{\strong{\TeX \LuaTeX \LuaLaTeX}}
-
-\TeX-CM \LuaTeX-CM \LuaLaTeX-CM
+\TeX \LuaTeX \LuaLaTeX\par
+\font[family=Libertinus Serif]{\TeX \LuaTeX \LuaLaTeX}\par
+\font[family=FreeMono]{\TeX \LuaTeX \LuaLaTeX}\par
+\font[family=Libertinus Sans]{\strong{\TeX \LuaTeX \LuaLaTeX}}\par
+\TeX-CM \LuaTeX-CM \LuaLaTeX-CM\par
 \line
-}
-}
+\end{center}
+\end{typeset-into}
 \end{document}
