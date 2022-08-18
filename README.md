@@ -19,6 +19,10 @@ These logos are implemented:
 * `\LuaTeX`
 * `\LuaLaTeX`
 
+### Repository history
+
+This repository was originally in Fredrick Brennan (@ctrlcctrlv)'s account but was upgraded to an official SILE package post-PR №1 by Caleb Maclennan ([#1 — Overhaul for SILE v0.13+](https://github.com/sile-typesetter/sile-logos/pull/1)). 
+
 ## Why `em`?
 
 The values were copied from `metalogo.dtx`. They work with a variety of fonts, as shown in the example.
