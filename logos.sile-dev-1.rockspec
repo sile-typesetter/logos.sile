@@ -1,5 +1,5 @@
 rockspec_format = "3.0"
-package = "logos.sil"
+package = "logos.sile"
 version = "dev-1"
 
 source = {
