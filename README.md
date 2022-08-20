@@ -1,3 +1,5 @@
+[![Luacheck Lint Status](https://img.shields.io/github/workflow/status/sile-typesetter/logos.sile/Luacheck?label=Luacheck&logo=Lua)](https://github.com/sile-typesetter/logos.sile/actions?workflow=Luacheck)
+
 # LaTeX logos&mdash;in SILE!
 
 ![](https://raw.githubusercontent.com/sile-typesetter/logos.sile/master/examples.png)
