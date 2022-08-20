@@ -1,7 +1,7 @@
 local base = require("packages.base")
 
 local package = pl.class(base)
-package._name = "sile-logos"
+package._name = "logos"
 
 local function script_path ()
    local str = debug.getinfo(2, "S").source:sub(2)
