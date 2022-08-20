@@ -1,14 +1,13 @@
--- DO NOT EDIT! Modify template logos.sile.rockspec.in and rebuild with `make logos.sile-dev-1.rockspec`
 rockspec_format = "3.0"
 package = "logos.sile"
-version = "dev-1"
+version = "@SEMVER@-@ROCKREV@"
 
 local _github = "https://github.com/sile-typesetter"
 local _module = package:gsub("%.sile$", "")
 
 source = {
    url = ("git+%s/%s.git"):format(_github, package),
-   tag = "master"
+   tag = "@TAG@"
 }
 
 description = {
