@@ -6,6 +6,10 @@ SHELL := zsh
 .DELETE_ON_ERROR:
 .SUFFIXES:
 
+SILE ?= sile
+MAGICK ?= magick
+GIT ?= git
+
 PACKAGE = $(patsubst %.rockspec.in,%,$(wildcard *.rockspec.in))
 ROCKREV = 1
 TAG ?= v
@@ -39,6 +43,16 @@ clean:
 lint:
 	luacheck .
 	luarocks lint -- $(DEV_SPEC)
+
+ifneq ($(SEMVER),)
+.PHONY: release
+release: $(REL_SPEC)
+	$(GIT) diff-index --quiet --cached HEAD || exit 1 # die if anything staged but not committed
+	$(GIT) diff-files --quiet || exit 1 # die if any tracked files have unstagged changes
+	$(GIT) add $<
+	$(GIT) commit -m "Release $(TAG)"
+	$(GIT) tag $(TAG)
+endif
 
 define rockpec_template =
 	sed -e "s/@SEMVER@/$(SEMVER)/g" \
@@ -74,5 +88,14 @@ $(PACKAGE)-dev-%.src.rock: $(DEV_SPEC)
 
 $(PACKAGE)-%.src.rock: rockspecs/$(PACKAGE)-%.rockspec
 	luarocks pack $<
+
+%.pdf: %.sil
+	$(SILE) $< -o $@
+
+%.pdf: %.xml
+	$(SILE) $< -o $@
+
+%.png: %.pdf
+	$(MAGICK) convert -density 300 $< $@
 
 $(MAKEFILE_LIST):;
