@@ -31,4 +31,4 @@ jobs:
     with:
       rockspecs: ${{ needs.affected.outputs.rockspecs }}
     secrets:
-      apikey: ${{ secrets.LUAROCKS_APIKEY }}
+      apikey: ${{ secrets.LUAROCKS_SILETYPESETTER }}

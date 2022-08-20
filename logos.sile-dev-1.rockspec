@@ -8,7 +8,7 @@ source = {
 }
 
 description = {
-   summary = "LaTeX logos—in SILE! ",
+   summary = "LaTeX logos—in SILE!",
    detailed = [[This package adds the "bumpy road" logos from the LaTeX metalogo package to SILE.]],
    license = "Apache 2",
    homepage = "https://github.com/sile-typesetter/logos.sile",
