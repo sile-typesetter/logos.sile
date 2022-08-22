@@ -1,8 +1,11 @@
+[![Luacheck Lint Status](https://img.shields.io/github/workflow/status/sile-typesetter/logos.sile/Luacheck?label=Luacheck&logo=Lua)](https://github.com/sile-typesetter/logos.sile/actions?workflow=Luacheck)
+[![Luarocks](https://img.shields.io/luarocks/v/sile-typesetter/logos.sile?label=Luarocks&logo=Lua)](https://luarocks.org/modules/sile-typesetter/logos.sile)
+
 # LaTeX logos&mdash;in SILE!
 
-![](https://raw.githubusercontent.com/ctrlcctrlv/sile-logos/master/examples.png)
+![](https://raw.githubusercontent.com/sile-typesetter/logos.sile/master/examples.png)
 
-* [`examples.sil`](https://github.com/ctrlcctrlv/sile-logos/blob/master/examples.sil) ([PDF](https://github.com/ctrlcctrlv/sile-logos/blob/master/examples.pdf))
+* [`examples.sil`](https://github.com/sile-typesetter/logos.sile/blob/master/examples.sil) ([PDF](https://github.com/sile-typesetter/logos.sile/blob/master/examples.pdf))
 
 ## About
 
@@ -18,6 +21,10 @@ These logos are implemented:
 * `\XeLaTeX`
 * `\LuaTeX`
 * `\LuaLaTeX`
+
+### Repository history
+
+This repository was originally in Fredrick Brennan (@ctrlcctrlv)'s account but was upgraded to an official SILE package post-PR №1 by Caleb Maclennan ([#1 — Overhaul for SILE v0.13+](https://github.com/sile-typesetter/logos.sile/pull/1)). 
 
 ## Why `em`?
 

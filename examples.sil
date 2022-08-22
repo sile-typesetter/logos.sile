@@ -6,7 +6,7 @@
 \use[module=packages.frametricks]
 \use[module=packages.rules]
 \use[module=packages.rebox]
-\use[module=packages.sile-logos]
+\use[module=packages.logos]
 \set[parameter=font.family,value=EB Garamond,makedefault=true]
 \set[parameter=font.size,value=12,makedefault=true]
 \define[command=line]{\hrule[width=4em,height=0.3pt]\skip[height=1ex]}

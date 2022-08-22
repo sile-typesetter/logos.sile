@@ -1,7 +1,7 @@
 local base = require("packages.base")
 
 local package = pl.class(base)
-package._name = "sile-logos"
+package._name = "logos"
 
 function package:_init ()
 	base._init(self)
