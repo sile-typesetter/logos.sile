@@ -1,4 +1,4 @@
-std = "max"
+std = "min+sile"
 include_files = {
   "**/*.lua",
   "*.rockspec",
@@ -12,13 +12,6 @@ exclude_files = {
 }
 files["**/*_spec.lua"] = {
   std = "+busted"
-}
-globals = {
-  "SILE",
-  "SU",
-  "luautf8",
-  "pl",
-  "fluent"
 }
 max_line_length = false
 ignore = {
